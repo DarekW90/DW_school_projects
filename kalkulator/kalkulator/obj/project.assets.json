@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\kalkulator.csproj",
-      "projectName": "kalkulator",
-      "projectPath": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\kalkulator.csproj",
+      "projectUniqueName": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\calculator.csproj",
+      "projectName": "calculator",
+      "projectPath": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\calculator.csproj",
       "packagesPath": "C:\\Users\\Darek\\.nuget\\packages\\",
       "outputPath": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\obj\\",
       "projectStyle": "PackageReference",
