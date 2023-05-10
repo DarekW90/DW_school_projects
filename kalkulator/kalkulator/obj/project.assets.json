@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\kalkulator.csproj",
+      "projectUniqueName": "C:\\Users\\Darek\\Source\\Repos\\DarekW90\\DW_school_projects\\kalkulator\\kalkulator\\kalkulator.csproj",
       "projectName": "kalkulator",
-      "projectPath": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\kalkulator.csproj",
+      "projectPath": "C:\\Users\\Darek\\Source\\Repos\\DarekW90\\DW_school_projects\\kalkulator\\kalkulator\\kalkulator.csproj",
       "packagesPath": "C:\\Users\\Darek\\.nuget\\packages\\",
-      "outputPath": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\obj\\",
+      "outputPath": "C:\\Users\\Darek\\Source\\Repos\\DarekW90\\DW_school_projects\\kalkulator\\kalkulator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "G:\\Programy\\Microsoft Visual Studio2022\\Shared\\NuGetPackages"

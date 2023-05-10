@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TcwmrDNSLmlYGkGZPhsii0r/7sm3d0fkmyr1MbXfKxqoLjfUGTjSU+BJOPR/NTQegKsqtGlhj4PH4kIKvcWooQ==",
+  "dgSpecHash": "jGre1HEaCijOQYBhSRiEMogkvu7g1dDuPSueSxQ0x5gQOZCo+bd0J7Yedc5l9g3/A2gkfV1onP1GXHfyPx1FWQ==",
   "success": true,
-  "projectFilePath": "G:\\Studia\\Semestr II\\Programowanie obiektowe\\mgr Grzegorz Kaczorowski\\.projekt zaliczeniowy\\kalkulator\\kalkulator\\kalkulator.csproj",
+  "projectFilePath": "C:\\Users\\Darek\\Source\\Repos\\DarekW90\\DW_school_projects\\kalkulator\\kalkulator\\kalkulator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Darek\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\Darek\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
