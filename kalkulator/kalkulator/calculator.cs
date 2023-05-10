@@ -5,7 +5,6 @@ namespace kalkulator
         public calculator()
         {
             InitializeComponent();
-            this.Text = "Kalkulator";
         }
 
 

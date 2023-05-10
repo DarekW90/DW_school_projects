@@ -258,7 +258,7 @@
             Controls.Add(txtTotal);
             Name = "calculator";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Calculator";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
