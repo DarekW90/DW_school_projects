@@ -1,9 +1,0 @@
-Zarządzanie kontaktami: Stwórz aplikację, która umożliwia użytkownikowi dodawanie, edytowanie i usuwanie kontaktów. Możesz utworzyć klasę "Kontakt", która będzie przechowywać informacje takie jak imię, nazwisko, numer telefonu itp. Wykorzystaj obiekty tej klasy do manipulacji kontaktami.
-
-Kalkulator: Stwórz prostą aplikację kalkulatora, która umożliwia użytkownikowi wykonywanie podstawowych operacji matematycznych (dodawanie, odejmowanie, mnożenie, dzielenie). Możesz utworzyć klasę "Kalkulator", która będzie zawierać metody do wykonywania tych operacji.
-
-Lista zakupów: Stwórz aplikację, która pozwoli użytkownikowi tworzyć listy zakupów. Możesz utworzyć klasę "Produkt", która będzie przechowywać informacje o nazwie produktu, cenie itp. Następnie stwórz klasę "ListaZakupow", która będzie zawierać metody do dodawania, usuwania i wyświetlania produktów na liście.
-
-Prosty dziennik: Stwórz aplikację, która umożliwia użytkownikowi tworzenie wpisów w dzienniku. Możesz utworzyć klasę "WpisDziennika", która będzie przechowywać informacje takie jak tytuł, treść, data itp. Wykorzystaj obiekty tej klasy do zarządzania wpisami w dzienniku.
-
-System rezerwacji: Stwórz prosty system rezerwacji, np. dla restauracji lub hotelu. Możesz utworzyć klasy takie jak "Klient", "Rezerwacja" i "Pokój", które będą przechowywać odpowiednie informacje. Wykorzystaj obiekty tych klas do zarządzania procesem rezerwacji.
