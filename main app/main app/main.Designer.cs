@@ -35,7 +35,7 @@
             // 
             btnCalculator.Location = new Point(118, 81);
             btnCalculator.Name = "btnCalculator";
-            btnCalculator.Size = new Size(498, 29);
+            btnCalculator.Size = new Size(474, 29);
             btnCalculator.TabIndex = 0;
             btnCalculator.Text = "Calculator";
             btnCalculator.UseVisualStyleBackColor = true;
@@ -48,6 +48,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnCalculator);
             Name = "mainApp";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Main";
             ResumeLayout(false);
         }

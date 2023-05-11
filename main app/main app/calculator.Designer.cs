@@ -236,7 +236,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(414, 450);
+            ClientSize = new Size(410, 453);
             Controls.Add(btn0);
             Controls.Add(btn3);
             Controls.Add(btn2);
@@ -255,7 +255,9 @@
             Controls.Add(btnClear);
             Controls.Add(txtTotal);
             Name = "calculator1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "calculator";
+            FormClosed += calculator1_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -133,5 +133,11 @@ namespace main_app
             num1 = (0);
             num2 = (0);
         }
+
+        private void calculator1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainApp appMain = new mainApp();
+            appMain.Show();
+        }
     }
 }
