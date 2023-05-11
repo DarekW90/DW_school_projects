@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace main_app
+﻿namespace main_app
 {
     public partial class BreakOut : Form
     {
@@ -25,23 +15,31 @@ namespace main_app
 
         Random rnd = new Random();
 
+        PictureBox[] blockArray;
+
 
         public BreakOut()
         {
             InitializeComponent();
 
-            setupGame();
+            PlaceBlocks();
 
         }
 
         private void setupGame()
         {
+
+            isGameOver = false;
             score = 0;
             ballx = 5;
             bally = 5;
             playerSpeed = 12;
             txtScore.Text = "Punkty: " + score;
 
+            ball.Left = 380;
+            ball.Top = 335;
+
+            player.Left = 350;
 
             gameTimer.Start();
 
@@ -64,6 +62,53 @@ namespace main_app
             txtScore.Text = "Punkty: " + score + " " + message;
         }
 
+        private void PlaceBlocks()
+        {
+            blockArray = new PictureBox[15];
+
+            int a = 0;
+
+            int top = 70;
+            int left = 100;
+
+            for (int i = 0; i < blockArray.Length; i++)
+            {
+                blockArray[i] = new PictureBox();
+                blockArray[i].Height = 32;
+                blockArray[i].Width = 100;
+                blockArray[i].Tag = "blocks";
+                blockArray[i].BackColor = Color.White;
+
+                if (a == 5)
+                {
+                    top = top + 50;
+                    left = 100;
+                    a = 0;
+                }
+
+                if (a < 5)
+                {
+                    a++;
+                    blockArray[i].Left = left;
+                    blockArray[i].Top = top;
+                    this.Controls.Add(blockArray[i]);
+                    left = left + 130;
+                }
+            }
+
+            //setupGame();
+        }
+
+
+        private void removeBlocks()
+        {
+            foreach (PictureBox x in blockArray)
+            {
+                this.Controls.Remove(x);
+            }
+        }
+
+
         private void gameTimerEvent(object sender, EventArgs e)
         {
             txtScore.Text = "Punkty: " + score;
@@ -73,7 +118,7 @@ namespace main_app
                 player.Left -= playerSpeed;
             }
 
-            if (goRight == true && player.Left < 900)
+            if (goRight == true && player.Left < 700)
             {
                 player.Left += playerSpeed;
             }
@@ -81,7 +126,7 @@ namespace main_app
             ball.Left += ballx;
             ball.Top += bally;
 
-            if (ball.Left < 0 || ball.Left > 990)
+            if (ball.Left < 0 || ball.Left > 780)
             {
                 ballx = -ballx;
             }
@@ -91,11 +136,14 @@ namespace main_app
                 bally = -bally;
             }
 
-            if(ball.Bounds.IntersectsWith(player.Bounds))
+            if (ball.Bounds.IntersectsWith(player.Bounds))
             {
+
+                ball.Top = 520;
+
                 bally = rnd.Next(5, 12) * -1;
 
-                if (ballx < 0 )
+                if (ballx < 0)
                 {
                     ballx = rnd.Next(5, 12) * -1;
                 }
@@ -110,7 +158,7 @@ namespace main_app
             {
                 if (x is PictureBox && (string)x.Tag == "blocks")
                 {
-                    if(ball.Bounds.IntersectsWith(x.Bounds))
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         score += 1;
 
@@ -121,16 +169,16 @@ namespace main_app
                 }
             }
 
-            if(score == 15)
+            if (score == 15)
             {
                 //pokaż informacje o wygranej
-                gameOver("Wygrałeś!!");
+                gameOver("Wygrana!! - Naciśnij ENTER by zagrać ponownie");
             }
 
-            if(ball.Top > 580)
+            if (ball.Top > 580)
             {
                 //pokaż informacje o przegranej
-                gameOver("Przegrałeś");
+                gameOver("Przegrana. - Naciśnij ENTER by zagrać ponownie");
             }
 
         }
@@ -159,11 +207,37 @@ namespace main_app
             {
                 goRight = false;
             }
+
+            if (e.KeyCode == Keys.Enter && isGameOver == true)
+            {
+                removeBlocks();
+                PlaceBlocks();
+                setupGame();
+            }
+
+
         }
 
         private void BreakOut_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            setupGame();
+        }
+
+        private void buttonStart_Click_1(object sender, EventArgs e)
+        {
+            setupGame();
+            buttonStart.Visible = false;
+            this.Focus();
         }
     }
 }
