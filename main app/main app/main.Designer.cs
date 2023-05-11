@@ -33,6 +33,8 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            btnPhotoGalery = new Button();
+            btnFlappyBird = new Button();
             SuspendLayout();
             // 
             // btnCalculator
@@ -90,12 +92,34 @@
             label3.Text = "Gry";
             label3.Click += label3_Click;
             // 
+            // btnPhotoGalery
+            // 
+            btnPhotoGalery.Location = new Point(56, 193);
+            btnPhotoGalery.Name = "btnPhotoGalery";
+            btnPhotoGalery.Size = new Size(250, 29);
+            btnPhotoGalery.TabIndex = 4;
+            btnPhotoGalery.Text = "Galeria zdjęć";
+            btnPhotoGalery.UseVisualStyleBackColor = true;
+            btnPhotoGalery.Click += btnPhotoGalery_Click;
+            // 
+            // btnFlappyBird
+            // 
+            btnFlappyBird.Location = new Point(449, 193);
+            btnFlappyBird.Name = "btnFlappyBird";
+            btnFlappyBird.Size = new Size(250, 29);
+            btnFlappyBird.TabIndex = 5;
+            btnFlappyBird.Text = "Flappy Bird";
+            btnFlappyBird.UseVisualStyleBackColor = true;
+            btnFlappyBird.Click += btnFlappyBird_Click;
+            // 
             // mainApp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(782, 453);
+            Controls.Add(btnFlappyBird);
+            Controls.Add(btnPhotoGalery);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -116,5 +140,7 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button btnPhotoGalery;
+        private Button btnFlappyBird;
     }
 }

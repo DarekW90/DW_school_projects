@@ -51,5 +51,17 @@ namespace main_app
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+        private void btnPhotoGalery_Click(object sender, EventArgs e)
+        {
+            photoGalery galeryPhoto = new photoGalery();
+            galeryPhoto.ShowDialog();
+        }
+
+        private void btnFlappyBird_Click(object sender, EventArgs e)
+        {
+            flappyBird flappyBirdGame = new flappyBird();
+            flappyBirdGame.ShowDialog();
+        }
     }
 }
