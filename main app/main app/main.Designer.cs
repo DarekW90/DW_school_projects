@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             btnCalculator = new Button();
+            btnBreakOut = new Button();
             SuspendLayout();
             // 
             // btnCalculator
             // 
-            btnCalculator.Location = new Point(118, 81);
+            btnCalculator.Location = new Point(49, 32);
             btnCalculator.Name = "btnCalculator";
             btnCalculator.Size = new Size(474, 29);
             btnCalculator.TabIndex = 0;
@@ -41,11 +42,22 @@
             btnCalculator.UseVisualStyleBackColor = true;
             btnCalculator.Click += btnForm2_Click;
             // 
+            // btnBreakOut
+            // 
+            btnBreakOut.Location = new Point(49, 95);
+            btnBreakOut.Name = "btnBreakOut";
+            btnBreakOut.Size = new Size(474, 29);
+            btnBreakOut.TabIndex = 1;
+            btnBreakOut.Text = "Gra: Break Out";
+            btnBreakOut.UseVisualStyleBackColor = true;
+            btnBreakOut.Click += btnBreakOut_Click;
+            // 
             // mainApp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnBreakOut);
             Controls.Add(btnCalculator);
             Name = "mainApp";
             StartPosition = FormStartPosition.CenterScreen;
@@ -56,5 +68,6 @@
         #endregion
 
         private Button btnCalculator;
+        private Button btnBreakOut;
     }
 }
