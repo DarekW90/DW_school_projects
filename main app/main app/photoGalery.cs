@@ -32,7 +32,7 @@ namespace main_app
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-            if (backgroundNumber < image_location.Count -1) 
+            if (backgroundNumber < image_location.Count - 1)
             {
                 backgroundNumber++;
             }
@@ -51,19 +51,19 @@ namespace main_app
             mousePosition.Y = e.Y;
 
             Firework newFirework = new Firework();
-            newFirework.postion.X = mousePosition.X - (newFirework.width/2);
-            newFirework.postion.Y = mousePosition.Y - (newFirework.height/2);
+            newFirework.postion.X = mousePosition.X - (newFirework.width / 2);
+            newFirework.postion.Y = mousePosition.Y - (newFirework.height / 2);
             fireworks_list.Add(newFirework);
         }
 
         private void FormPaintEvent(object sender, PaintEventArgs e)
         {
-            foreach (Firework newFirework in fireworks_list.ToList()) 
+            foreach (Firework newFirework in fireworks_list.ToList())
             {
                 if (newFirework.animationComplite == false)
                 {
-                    e.Graphics.DrawImage(newFirework.firework, newFirework.postion.X, 
-                        newFirework.postion.Y,newFirework.width,newFirework.height);
+                    e.Graphics.DrawImage(newFirework.firework, newFirework.postion.X,
+                        newFirework.postion.Y, newFirework.width, newFirework.height);
                 }
             }
         }
@@ -72,7 +72,7 @@ namespace main_app
         {
             if (fireworks_list != null)
             {
-                foreach(Firework firework in fireworks_list.ToList())
+                foreach (Firework firework in fireworks_list.ToList())
                 {
                     if (firework.animationComplite == false)
                     {
@@ -87,6 +87,12 @@ namespace main_app
 
             this.Invalidate();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            photoStart.Visible = false;
+            this.Focus();
         }
     }
 }

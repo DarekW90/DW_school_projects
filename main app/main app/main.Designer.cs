@@ -39,6 +39,7 @@
             // 
             // btnCalculator
             // 
+            btnCalculator.Cursor = Cursors.Hand;
             btnCalculator.Location = new Point(56, 157);
             btnCalculator.Name = "btnCalculator";
             btnCalculator.Size = new Size(250, 30);
@@ -49,6 +50,7 @@
             // 
             // btnBreakOut
             // 
+            btnBreakOut.Cursor = Cursors.Hand;
             btnBreakOut.Location = new Point(449, 157);
             btnBreakOut.Name = "btnBreakOut";
             btnBreakOut.Size = new Size(250, 30);
@@ -94,6 +96,7 @@
             // 
             // btnPhotoGalery
             // 
+            btnPhotoGalery.Cursor = Cursors.Hand;
             btnPhotoGalery.Location = new Point(56, 193);
             btnPhotoGalery.Name = "btnPhotoGalery";
             btnPhotoGalery.Size = new Size(250, 29);
@@ -104,6 +107,7 @@
             // 
             // btnFlappyBird
             // 
+            btnFlappyBird.Cursor = Cursors.Hand;
             btnFlappyBird.Location = new Point(449, 193);
             btnFlappyBird.Name = "btnFlappyBird";
             btnFlappyBird.Size = new Size(250, 29);
