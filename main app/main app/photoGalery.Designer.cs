@@ -28,33 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            components = new System.ComponentModel.Container();
+            animationTimer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
-            // label1
+            // animationTimer
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(169, 144);
-            label1.Name = "label1";
-            label1.Size = new Size(386, 20);
-            label1.TabIndex = 0;
-            label1.Text = "tu zostanie zaimplementowana animowana galeria zdjęć";
+            animationTimer.Enabled = true;
+            animationTimer.Interval = 20;
+            animationTimer.Tick += AnimationTimeEvent;
             // 
             // photoGalery
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            DoubleBuffered = true;
             Name = "photoGalery";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "photoGalery";
+            Paint += FormPaintEvent;
+            KeyUp += KeyIsUp;
+            MouseDown += FormMouseDown;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
+        private System.Windows.Forms.Timer animationTimer;
     }
 }
