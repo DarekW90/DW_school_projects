@@ -18,10 +18,10 @@ namespace main_app
         }
 
         string CalTotal;
-        int num1;
-        int num2;
+        long num1;
+        long num2;
         string option;
-        int result;
+        long result;
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
@@ -31,7 +31,7 @@ namespace main_app
                 return;
             }
 
-            num2 = int.Parse(txtTotal.Text);
+            num2 = long.Parse(txtTotal.Text);
 
             if (option == ("+"))
                 result = num1 + num2;
@@ -45,7 +45,14 @@ namespace main_app
             if (option == ("/"))
                 result = num1 / num2;
 
-            txtTotal.Text = result + "";
+            if (result > 999999999)
+            {
+                txtTotal.Text = "error";
+            }
+            else 
+            { 
+                txtTotal.Text = result + "";
+            }
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -101,28 +108,28 @@ namespace main_app
         private void btnPlus_Click(object sender, EventArgs e)
         {
             option = "+";
-            num1 = int.Parse(txtTotal.Text);
+            num1 = long.Parse(txtTotal.Text);
             txtTotal.Clear();
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
             option = "-";
-            num1 = int.Parse(txtTotal.Text);
+            num1 = long.Parse(txtTotal.Text);
             txtTotal.Clear();
         }
 
         private void btnMulti_Click(object sender, EventArgs e)
         {
             option = "*";
-            num1 = int.Parse(txtTotal.Text);
+            num1 = long.Parse(txtTotal.Text);
             txtTotal.Clear();
         }
 
         private void btnDiv_Click(object sender, EventArgs e)
         {
             option = "/";
-            num1 = int.Parse(txtTotal.Text);
+            num1 = long.Parse(txtTotal.Text);
             txtTotal.Clear();
         }
 
